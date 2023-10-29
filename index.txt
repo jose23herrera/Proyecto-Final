@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web de Una Sola P gina</title>
+    <link rel="stylesheet" type="text/css" href="fullPage.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            text-align: center;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="fullPage.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+                afterLoad: function (origin, destination, direction) {
+                    var sectionIndex = destination.index;
+                    var sectionTitle = $('#fullpage .section').eq(sectionIndex).find('h1').text();
+                    alert('Est s en la secci¢n: ' + sectionTitle);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <h1>Secci¢n 1</h1>
+            <p>Contenido de la primera secci¢n.</p>
+            <a href="#">Enlace de ejemplo</a>
+        </div>
+        <div class="section">
+            <h1>Secci¢n 2</h1>
+            <p>Contenido de la segunda secci¢n.</p>
+            <a href="#">Otro enlace</a>
+        </div>
+        <div class="section">
+            <h1>Secci¢n 3</h1>
+            <p>Contenido de la tercera secci¢n.</p>
+            <a href="#">Enlace final</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+exit
