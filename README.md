@@ -2,8 +2,11 @@
 
 # Developers
 Erick Darío Martínez Beltrán   MB170688
+
 Elmer Rolando Rivas Cítala     RC100588
+
 Emerson Josué Gabriel Rosales  GR232330
+
 Waldo José Pérez Aguillón      PA230265
 
 # Utilizar código fuente
